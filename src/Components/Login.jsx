@@ -23,7 +23,7 @@ function Login() {
    async function handleSubmit(e){
     e.preventDefault()
     try {
-        const response=await fetch('http://localhost:3000/api/login',{
+        const response=await fetch('https://mern-stack-blogging-backend.onrender.com/api/login',{
             method:'POST',
             headers:{
                 'Content-type':'application/JSON'

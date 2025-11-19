@@ -35,7 +35,7 @@ function AddBlogs() {
       form.append('title', formData.title);
       form.append('body', formData.body);
       form.append('image', formData.image);
-      const response=await fetch('http://localhost:3000/api/createBlog',{
+      const response=await fetch('https://mern-stack-blogging-backend.onrender.com/api/createBlog',{
         method:'POST',
         credentials: 'include',
         body:form

@@ -22,7 +22,7 @@ function Header() {
       dangerMode: true,
     }).then((willLogout) => {
       if (willLogout) {
-        fetch('http://localhost:3000/api/logout',{
+        fetch('https://mern-stack-blogging-backend.onrender.com/api/logout',{
           credentials:"include"
         })
         .then((res)=>{

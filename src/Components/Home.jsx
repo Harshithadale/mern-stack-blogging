@@ -7,7 +7,7 @@ function Home() {
   let [currentId,setCurrentId]=useState('')
   let [blogs,setBlogs]=useState([])
   useEffect(()=>{
-      fetch('http://localhost:3000/api/allBlogs')
+      fetch('https://mern-stack-blogging-backend.onrender.com/api/allBlogs')
     .then(res=>res.json())
     .then(data=>{
        const sortedBlogs = data.data.sort(

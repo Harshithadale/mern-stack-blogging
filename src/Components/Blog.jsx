@@ -9,7 +9,7 @@ function Blog({currentId}) {
 
         async function handleBlog(){
             try {
-                 const response= await fetch(`http://localhost:3000/api/getBlog/${currentId}`,{
+                 const response= await fetch(`https://mern-stack-blogging-backend.onrender.com/api/getBlog/${currentId}`,{
                     method:'GET',
                     credentials:'include'
                 })

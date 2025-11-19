@@ -23,7 +23,7 @@ function Sigin() {
     const handleSubmit=async(e)=>{
         e.preventDefault()
         try {
-            const response=await fetch('http://localhost:3000/api/register',{
+            const response=await fetch('https://mern-stack-blogging-backend.onrender.com/api/register',{
                 method:'POST',
                 headers:{
                     'Content-Type': 'application/json'

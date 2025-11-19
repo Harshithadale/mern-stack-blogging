@@ -13,7 +13,7 @@ function MyBlogs() {
    let navigate=useNavigate()
 
     useEffect(()=>{
-        fetch('http://localhost:3000/api/myBlogs',{
+        fetch('https://mern-stack-blogging-backend.onrender.com/api/myBlogs',{
           credentials: 'include'
         })
       .then(res=>res.json())

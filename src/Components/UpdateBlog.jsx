@@ -28,7 +28,7 @@ function UpdateBlog({formData, setFormData, err,setErr,id,onUpdate}) {
            if (formData.image && typeof formData.image !== 'string') {
             form.append('image', formData.image);
           }
-            const response=await fetch(`http://localhost:3000/api/editBlog/${id}`,{
+            const response=await fetch(`https://mern-stack-blogging-backend.onrender.com/api/editBlog/${id}`,{
                 method:'PUT',
                 credentials:'include',
                 body:form
