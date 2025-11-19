@@ -37,7 +37,7 @@ function MyBlogs() {
     const [currentId, setCurrentId] = useState(null);
 
     function handleEdit(id){
-      fetch(`http://localhost:3000/api/getBlog/${id}`,{
+      fetch(`https://mern-stack-blogging-backend.onrender.com/api/getBlog/${id}`,{
         credentials: 'include'
       })
       .then(res=>res.json())
@@ -64,7 +64,7 @@ function MyBlogs() {
   }
 
     function handleDelete(id){
-      fetch(`http://localhost:3000/api/delBlog/${id}`,{
+      fetch(`https://mern-stack-blogging-backend.onrender.com/api/delBlog/${id}`,{
         method:'DELETE',
         credentials:'include'
       })
